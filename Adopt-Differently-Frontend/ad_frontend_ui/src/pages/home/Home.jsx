@@ -9,9 +9,14 @@ const start = () => {
 }
 export const Home = () => {
     return (
+
         <div className="home">
-            <h1 className="title">Welcome to Adopt Differently!</h1>
-            
+                <div className="home-overlay">
+
+            <div className="home-text">
+
+                <h1 className="title">Welcome to Adopt Differently!</h1>
+                    
                 <div className="search-bar">
                     <input type="text" placeholder="Start Your Search Here!" className="searchHome" id='searcHome' onKeyDown={(e) => {if (e.key === 'Enter') 
                     {searchs(document.getElementById('searchHome'))}
@@ -20,6 +25,8 @@ export const Home = () => {
                         searchs(document.getElementById('searchHome')
                         )}}>Search</button>
                 </div>
+            </div>
+            </div>
         </div>
     )
 }
