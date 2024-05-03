@@ -4,15 +4,15 @@ import com.adoptdifferently.model.Admin;
 
 public interface AdminService {
 
-    boolean loginadmin(Admin admin);
+    boolean loginAdmin(Admin admin);
 
-    boolean registeradmin(Admin admin);
+    boolean registerAdmin(Admin admin);
 
-    boolean deleteadmin(Admin admin);
+    boolean deleteAdmin(Admin admin);
 
-    boolean updateadmin(Admin admin);
+    boolean updateAdmin(Admin admin);
 
-    Admin getadmin(Admin admin);
+    Admin getAdmin(Admin admin);
 
     boolean isAdmin(Admin admin);
 

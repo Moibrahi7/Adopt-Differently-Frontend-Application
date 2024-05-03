@@ -16,7 +16,7 @@ public class AdminServiceImpl implements AdminService {
     private static final String adminPassword = "admin123";
 
     @Override
-    public boolean loginadmin(Admin admin) {
+    public boolean loginAdmin(Admin admin) {
         //  Validate admin login credentials against a database
         if ("adminUsername".equals(admin.getUsername()) && "adminPassword".equals(admin.getPassword())) {
             return true; // Login successful
@@ -26,7 +26,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public boolean registeradmin(Admin admin) {
+    public boolean registerAdmin(Admin admin) {
         if ("adminUsername".equals(admin.getUsername()) && "adminPassword".equals(admin.getPassword())) {
             sendConfirmationEmail( admin.getEmail());
             return true; // Registration successful
@@ -64,7 +64,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public boolean deleteadmin(Admin admin) {
+    public boolean deleteAdmin(Admin admin) {
         if("adminUsername".equals(admin.getUsername()) && "adminPassword".equals(admin.getPassword())) {
             return true; // Delete successful
         } else {
@@ -74,7 +74,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public boolean updateadmin(Admin admin) {
+    public boolean updateAdmin(Admin admin) {
         if ("adminUsername".equals(admin.getUsername()) && "adminPassword".equals(admin.getPassword())) {
             admin.setUsername("UpdatedAdminUsername");
             admin.setPassword("UpdatedAdminPassword");
@@ -87,7 +87,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public Admin getadmin(Admin admin) {
+    public Admin getAdmin(Admin admin) {
         if("adminUsername".equals(admin.getUsername()) && "adminPassword".equals(admin.getPassword())) {
             return admin;
         }

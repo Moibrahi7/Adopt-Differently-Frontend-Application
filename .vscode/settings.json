@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.debug.settings.onBuildFailureProceed": true
+=======
+    "java.configuration.updateBuildConfiguration": "interactive"
+>>>>>>> f071ec7 (feat: working tree Files)
 }
