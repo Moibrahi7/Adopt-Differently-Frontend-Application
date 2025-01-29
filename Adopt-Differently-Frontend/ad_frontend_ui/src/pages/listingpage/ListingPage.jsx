@@ -13,6 +13,7 @@ export const ListingPage = () => {
         <div>
             <div className="listing-page">
                 <>
+                   
                     <div key={catfo.id}>
                         <img src={catfo.image} alt={catfo.name} />
                         <div className="listing-info">
@@ -24,6 +25,7 @@ export const ListingPage = () => {
                             <p className="breed">{catfo.species_breed}</p>
                         </div>
                     </div>
+                    <button className="back-button" onClick={() => window.history.back()}>Back</button>
                 </>
             </div>
         </div>

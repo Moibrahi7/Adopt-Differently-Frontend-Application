@@ -25,6 +25,7 @@ body{
     }
 }
 .listing{
+    transition: 0.2s linear;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -33,13 +34,13 @@ body{
     border-radius: 10px;
     border: transparent 3px solid;
     margin: 20px;
-    transition: 0.2s linear;
     background-color: white;
     width: 20vw;
     align-self: center;
     gap: 10px;
     font-size: 90%;
     img{
+        transition: 0.2s linear;
         border-radius: 10px;
         width: 20vw;
         height: 20vw;
@@ -54,19 +55,19 @@ body{
 }
 
 .listing:hover{
-    display: flex;
-    position: erelative;
+    transition: 0.2s linear;
+    float: inherit;
+    position: sticky;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    transition: 0.2s linear;
     border: white 3px solid;
     width: 22vw;
     font-size: 110%;
     margin: 20px;
     padding: 20px;
-    
     img{
+        transition: 0.2s linear;
         width: 22vw;
         height: 22vw;
         object-fit: cover;
