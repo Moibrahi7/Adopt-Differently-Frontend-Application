@@ -6,7 +6,7 @@
             "description": "Meet Sprunk, the epitome of feline elegance and charm. With a sleek coat as black as midnight, Sprunk's luminous eyes gleam like polished onyx, hinting at a mischievous intelligence within. This regal feline moves with the grace of a dancer, each step deliberate and poised, as if navigating an invisible stage.Despite the aura of mystery that surrounds him, Sprunk is a social creature at heart. He delights in the company of his human companions, often seeking out affection with a gentle nudge or a soft purr. Yet, true to his independent nature, Sprunk also values his solitude, finding solace in quiet moments spent basking in a sunbeam or perched atop his favorite vantage point, surveying his kingdom with a sense of quiet authority. Sprunk's playful spirit knows no bounds, and he approaches each day with a sense of curiosity and adventure. Whether he's chasing shadows across the floor or pouncing on imaginary prey, there's never a dull moment with Sprunk around. With his boundless energy and endearing quirks, Sprunk is more than just a pet — he's a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him.",
             "owner": "Bingus Foundation",
             "cityState": "New Castle, DE",
-            "age": 5,
+            "age": -5,
             "breed": [
                 {
                     "breed": "Maine Coon"
@@ -19,9 +19,9 @@
             "id": "2",
             "name": "Bingus",
             "description": "Introducing Bingus, the captivating hairless wonder with a personality as unique as his appearance. Despite his lack of fur, Bingus possesses an undeniable allure, with his soft, velvety skin adorned in a symphony of wrinkles and folds that give him an almost otherworldly charm. His unique appearance and remarkable hairless nature make him an excellent addition to any family or home. With his unique personality and outstanding sense of beauty, Bingus is a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him.", 
-            "owner": "Bingus Foundation",
+            "owner": "Foundation Foundation",
             "cityState": "Miami, FL",
-            "age": 5,
+            "age": 1,
             "breed": [
                 {
                     "breed": "Sphynx Cat"
@@ -33,7 +33,7 @@
             "id": "3",
             "name": "Zingus",
             "description": "Meet Zingus, the radiant orange feline whose vibrant presence lights up any room he enters. With a coat as brilliant as a summer sunset, Zingus commands attention with his striking appearance and confident demeanor. His fur, a rich tapestry of golden hues, is accented by elegant stripes that ripple with every graceful movement. Zingus is a member of the family, and his unique appearance and unique personality make him an excellent addition to any family or home. With his unique personality and outstanding sense of beauty, Zingus is a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him.",
-            "owner": "Bingus Foundation",
+            "owner": "Ja CuemLe",
             "cityState": "Miami, FL",
             "age": 5,
             "breed": [
@@ -47,9 +47,9 @@
             "id": "4",
             "name": "Dingus",
             "description": "Meet Dingus, the epitome of feline charm and charisma. With a coat as sleek as polished mahogany and eyes that twinkle like stars in the night sky, Dingus exudes an aura of timeless elegance. His fur, a velvety canvas of deep, chocolate brown, is accentuated by subtle patterns of darker hues that add depth and dimension to his majestic appearance.",
-            "owner": "Bingus Foundation",
+            "owner": "Xorthax, Destroyer of Souls",
             "cityState": "Miami, FL",
-            "age": 5,
+            "age": 20930329200409939302,
             "breed": [
                 {
                     "breed": "Orange Tabby Cat"
@@ -61,9 +61,9 @@
             "id": "5",
             "name": "Mr. Beef",
             "description": "Introducing Mr. Beef, a feline of substantial presence and undeniable charisma. Despite his rather unconventional name, Mr. Beef possesses a certain air of sophistication, with a sleek coat as black as the night and eyes that gleam with intelligence and wit. His fur, soft to the touch, hints at hidden strength beneath its velvety surface. His unique personality and outstanding sense of beauty, make him a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him. With his unique personality and outstanding sense of beauty, Mr. Beef is a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him.",
-            "owner": "Bingus Foundation",
+            "owner": "Grungle Foundation",
             "cityState": "Miami, FL",
-            "age": 5,
+            "age": 300000000,
             "breed": [
                 {
                     "breed": "Orange Tabby Cat"
@@ -75,9 +75,9 @@
             "id": "6",
             "name": "Rick",
             "description": "Meet Rick, the epitome of cool and confident feline swagger. With a coat as sleek as midnight and eyes that sparkle like polished emeralds, Rick exudes an air of effortless charm and charisma. His fur, a velvety canvas of deepest black, is accented by subtle hints of silver that add a touch of mystery to his enigmatic presence. His unique personality and outstanding sense of beauty, make him a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him. With his unique personality and outstanding sense of beauty, Rick is a beloved member of the family, bringing joy and laughter to all who have the pleasure of knowing him.",
-            "owner": "Xorthax, Destroyer of Souls",
+            "owner": "YouCantSikaMe445",
             "cityState": "Miami, FL",
-            "age": 5,
+            "age": 30,
             "breed": [
                 {
                     "breed": "Syamise Cat"

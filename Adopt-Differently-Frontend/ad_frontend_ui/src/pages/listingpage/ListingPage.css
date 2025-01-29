@@ -1,6 +1,5 @@
 .listing-page{
-    display: inline-flex;
-    /* flex-direction: column; */
+    display: flex;
     width: 90%;
     align-items: center;
     justify-content: center;
@@ -13,6 +12,7 @@
     margin-bottom: 20px;
     
     img{
+
         border-radius: 10px;
         width: 40%;
         height: 40%;
@@ -32,4 +32,20 @@
     padding: 20px;
     border-radius: 10px;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.back-button{
+    align-self: start;
+    justify-self: start;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #60d0aeff;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
 }
