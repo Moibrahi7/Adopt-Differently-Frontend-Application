@@ -33,7 +33,14 @@ export const Header = () => {
                 </li>
             </ul>
             </nav>
-            {check()}
+             <div className="header-left">
+                <input type="text" placeholder="Start Your Search Here!" className="search" id='search' onKeyDown={(e) => {if (e.key === 'Enter') 
+                {searchs(document.getElementById('search'))}
+                } } />
+                <button className="search-btn" onClick={() =>{ 
+                    searchs(document.getElementById('search')
+                    )}}>Search</button>
+            </div>)
            
                 
             
@@ -55,61 +62,61 @@ function searchs (input) {
     else {
     }
 }
-function check() {
-    const [islogged, setIslogged] = useState(false);
-    const output1 = ( 
-    <div className="header-left">
-        <input type="text" placeholder="Start Your Search Here!" className="search" id='search' onKeyDown={(e) => {if (e.key === 'Enter') 
-        {searchs(document.getElementById('search'))}
-        } } />
-        <button className="search-btn" onClick={() =>{ 
-            searchs(document.getElementById('search')
-            )}}>Search</button>
-    </div>)
+// function check() {
+//     const [islogged, setIslogged] = useState(false);
+//     const output1 = ( 
+//     <div className="header-left">
+//         <input type="text" placeholder="Start Your Search Here!" className="search" id='search' onKeyDown={(e) => {if (e.key === 'Enter') 
+//         {searchs(document.getElementById('search'))}
+//         } } />
+//         <button className="search-btn" onClick={() =>{ 
+//             searchs(document.getElementById('search')
+//             )}}>Search</button>
+//     </div>)
 
-    const output2 = (
-        <div className="header-top-right">
-                <div className="signin">
-                    <li>
-                        <a to="/signin">Sign In</a>
-                    </li>
-                </div>
-                <div className="signup">
-                    <li>
-                        <a to="/signup">Sign Up</a>
-                    </li>
-                </div>
-            </div>
-    )
+//     const output2 = (
+//         <div className="header-top-right">
+//                 <div className="signin">
+//                     <li>
+//                         <a to="/signin">Sign In</a>
+//                     </li>
+//                 </div>
+//                 <div className="signup">
+//                     <li>
+//                         <a to="/signup">Sign Up</a>
+//                     </li>
+//                 </div>
+//             </div>
+//     )
 
-    const output3 = (
-        <div className="header-top-right">
-            <div className="signout">
-                <li>
-                    <a to="/signin" onClick={() => {
-                        useState.islogged=false;
-                        setIslogged(false)
-                        window.location.reload();
-                        return output2
-                    } }>Sign Out</a>
-                </li>
-            </div>
-        </div>
-    )
-    if (location.pathname !== "/") {
-       return output1
-    }
-    else {
+//     const output3 = (
+//         <div className="header-top-right">
+//             <div className="signout">
+//                 <li>
+//                     <a to="/signin" onClick={() => {
+//                         useState.islogged=false;
+//                         setIslogged(false)
+//                         window.location.reload();
+//                         return output2
+//                     } }>Sign Out</a>
+//                 </li>
+//             </div>
+//         </div>
+//     )
+//     if (location.pathname !== "/") {
+//        return output1
+//     }
+//     else {
         
-    }
-    if (useState.islogged) {
-        return output2
-    }
-    else if (!useState.islogged) {
-        return output3
-    }
-    else {
-        return output3
-    }
-}
+//     }
+//     if (useState.islogged) {
+//         return output2
+//     }
+//     else if (!useState.islogged) {
+//         return output3
+//     }
+//     else {
+//         return output3
+//     }
+// }
 
