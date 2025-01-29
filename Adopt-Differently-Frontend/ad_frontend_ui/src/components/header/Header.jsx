@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import logo from '../../assets/FullAdoptDifferentlyLogo.png';
 import {NavLink} from 'react-router-dom';
@@ -36,18 +36,7 @@ export const Header = () => {
             {check()}
            
                 
-            <div className="header-top-right">
-                <div className="signin">
-                    <li>
-                        <a to="/signin">Sign In</a>
-                    </li>
-                </div>
-                <div className="signup">
-                    <li>
-                        <a to="/signup">Sign Up</a>
-                    </li>
-                </div>
-            </div>
+            
         </header>
     )
 }
@@ -67,7 +56,8 @@ function searchs (input) {
     }
 }
 function check() {
-    const output = ( 
+    const [islogged, setIslogged] = useState(false);
+    const output1 = ( 
     <div className="header-left">
         <input type="text" placeholder="Start Your Search Here!" className="search" id='search' onKeyDown={(e) => {if (e.key === 'Enter') 
         {searchs(document.getElementById('search'))}
@@ -77,11 +67,49 @@ function check() {
             )}}>Search</button>
     </div>)
 
+    const output2 = (
+        <div className="header-top-right">
+                <div className="signin">
+                    <li>
+                        <a to="/signin">Sign In</a>
+                    </li>
+                </div>
+                <div className="signup">
+                    <li>
+                        <a to="/signup">Sign Up</a>
+                    </li>
+                </div>
+            </div>
+    )
+
+    const output3 = (
+        <div className="header-top-right">
+            <div className="signout">
+                <li>
+                    <a to="/signin" onClick={() => {
+                        useState.islogged=false;
+                        setIslogged(false)
+                        window.location.reload();
+                        return output2
+                    } }>Sign Out</a>
+                </li>
+            </div>
+        </div>
+    )
     if (location.pathname !== "/") {
-       return output
+       return output1
     }
     else {
         
+    }
+    if (useState.islogged) {
+        return output2
+    }
+    else if (!useState.islogged) {
+        return output3
+    }
+    else {
+        return output3
     }
 }
 
