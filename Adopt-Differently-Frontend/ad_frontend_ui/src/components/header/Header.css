@@ -103,23 +103,23 @@ header {
     justify-content: center;
     right : 0;
     color: #60d0aeff;
-    border-radius: 10px;
-    border: transparent 1px solid;
     background-color: white;
     cursor: pointer;
+    border-radius: 10px;
      a{
         text-decoration: none;
         color: #60d0aeff;
         padding: 10px;
         display: flex;
         gap: 10px;
+        border-radius: 10px;
+        border: transparent 2px solid;
      }
     :hover {
-        border-radius: 10px;
         transition: 0.2s linear;
         background-color: #60d0aeff;
         color: white;
-        border: white 1px solid;
+        border-color: white;
     }
 
 }
@@ -164,6 +164,7 @@ header {
 }
 
 .search-btn {
+    transition: 0.2s linear;
     border-radius: 0px 10px 10px 0px;
     padding: 10px;
     background-color: transparent;
@@ -172,7 +173,7 @@ header {
     width: 5vw;   
 }
 
-button:hover {
+.search-btn:hover {
     border-radius: 0px 10px 10px 0px;
     transition: 0.2s linear;
     background-color: white;
