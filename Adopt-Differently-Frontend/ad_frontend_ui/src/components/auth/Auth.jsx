@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { auth } from "../../firebase/fireBaseConfig";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { auth, signInWithGoogle } from "../../firebase/fireBaseConfig";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 
 export default function Auth() {
   const [email, setEmail] = useState("");
@@ -21,6 +21,10 @@ export default function Auth() {
       console.error(error);
     }
   };
+  const logGoogleUser = async () => {
+    const response = await signInWithGoogle();
+    console.log(response);
+  };
 
   return (
     <form className="auth-form" onSubmit={(e) => e.preventDefault()}>
@@ -34,6 +38,7 @@ export default function Auth() {
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password"/>
             </div>
             <div className="auth-buttons">
+                <button onClick={logGoogleUser}>Sign In With Google</button>
                 <button onClick={handleSignIn} className="">Sign In</button>
             </div>
         </div>
