@@ -78,6 +78,7 @@ header {
   }
 
 .header-top-menu a{
+    transition: 0.2s linear;
     border-radius: 10px;
     color: white;
     text-decoration: none;
